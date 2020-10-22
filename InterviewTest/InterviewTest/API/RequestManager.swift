@@ -32,10 +32,10 @@ class RequestManager: NSObject {
                 do {
                     let json = try JSONSerialization.jsonObject(with: data, options: [])
                     completion(json, nil)
-                    //print(json)
+                    print(json)
                 } catch {
                     completion(nil, error)
-                    //print(error)
+                    print(error)
                 }
             }
         }.resume()
